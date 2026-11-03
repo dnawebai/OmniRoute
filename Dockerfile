@@ -420,7 +420,7 @@ RUN --mount=type=cache,id=s/6e7f19fa-ce61-4903-bc2f-3643d245fd69-npm-cache,targe
 
 USER node
 
-RUN --network=none codex --version \
+RUN codex --version \
   && claude --version \
   && droid --version \
   && openclaw --version \
